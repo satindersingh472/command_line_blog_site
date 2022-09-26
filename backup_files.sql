@@ -57,7 +57,7 @@ CREATE TABLE `post` (
   PRIMARY KEY (`id`),
   KEY `post_FK` (`client_id`),
   CONSTRAINT `post_FK` FOREIGN KEY (`client_id`) REFERENCES `client` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -66,7 +66,7 @@ CREATE TABLE `post` (
 
 LOCK TABLES `post` WRITE;
 /*!40000 ALTER TABLE `post` DISABLE KEYS */;
-INSERT INTO `post` VALUES (1,'hardwork always pays off, no matter what','hardwork',1),(2,'honesty always wins','honesty',2),(3,'never underestimate the power of time','time',3),(4,'always be a good listener','listener',1),(5,'technology is growing day by day','technology',2),(6,'babies do not let their parents sleep','sleepless',2),(7,'winter is almost there','winter',2),(8,'canada has a cold weather','weather',2);
+INSERT INTO `post` VALUES (1,'hardwork always pays off, no matter what','hardwork',1),(2,'honesty always wins','honesty',2),(3,'never underestimate the power of time','time',3),(4,'always be a good listener','listener',1),(5,'technology is growing day by day','technology',2),(6,'babies do not let their parents sleep','sleepless',2),(7,'winter is almost there','winter',2),(8,'canada has a cold weather','weather',2),(9,'children are so cute','children',2),(10,'I have finished the assignment','finished',2),(11,'34343','3',2),(12,'I like summers ','summers',2),(13,'hoe much is left','helllo',2);
 /*!40000 ALTER TABLE `post` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -144,4 +144,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-09-24 23:24:22
+-- Dump completed on 2022-09-26 14:21:12
